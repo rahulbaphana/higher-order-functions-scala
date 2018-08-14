@@ -1,4 +1,4 @@
-#This is sbt practice project for higher order functions and tail-rec in scala
+#This is _**sbt**_ practice project for higher order functions and tail-rec in scala
 
 ###**_HigherOrderFunctions.scala_** is the file where the functions need implementation.
 
