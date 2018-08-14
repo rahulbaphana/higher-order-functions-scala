@@ -12,7 +12,8 @@ object HigherOrderFunctions {
   def isSorted[A](as: Array[A], f: (A,A) => Boolean): Boolean = ???
 
   def factorial(n:Int): Int = {
-    @tailrec
+    //TODO: uncomment the @tailrec once done with implementation to verify if it is tail recursive optimized
+    //@tailrec
     def go(num: Int, acc: Int): Int = ???
 
     go(n, 1)
