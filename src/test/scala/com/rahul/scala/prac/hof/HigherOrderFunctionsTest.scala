@@ -41,7 +41,7 @@ class HigherOrderFunctionsTest extends WordSpec with Matchers {
 
     "uncurry transform" should {
       "add(a)(b) to add(a,b)" in {
-        def add(a: Int)(b: Int) = a + b
+        def add = (a:Int) => (b:Int) => a + b
 
         def unCurriedAdd = uncurry(add)
 
@@ -51,7 +51,7 @@ class HigherOrderFunctionsTest extends WordSpec with Matchers {
       }
 
       "greet(msg)(name) to greet(msg, name)" in {
-        def greet(msg: String)(name: String) = s"${msg} ${name}"
+        def greet = (msg: String) => (name: String) => s"${msg} ${name}"
 
         def unCurriedGreet = uncurry(greet)
 
